@@ -84,7 +84,7 @@ def img_aug_zoom(filename):
     batch = data_iter.next()
     image = batch[0].astype('uint16')   
     
-    a = range(0, len(normal_list), 2)
+a = range(0, len(normal_list), 2)
 for i in a:
     if normal_list[i].startswith("ori"):
         img_aug_width(normal_ori_path + "/" + normal_list[i])
